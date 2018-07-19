@@ -1,8 +1,9 @@
 body {
-    height: 100vh;
+    height: 150vh;
     padding: 1em;
     background: linear-gradient(rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url(img/bg.jpg);
     background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: cover;
     position: relative;
     text-align: center;
