@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-files=" img/bg.jpg">
+
+<head>
+
+    <title>To-Do List App</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" shrink-to-fit="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="To-do List App" />
+    <meta property="og:description" content="To-do List" />
+    <meta name="author" content="Bolaji Ayodeji">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Mavo Stylesheets-->
+    <link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css">
+    <script src="https://dev.mavo.io/dist/mavo.js"></script>
+
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Custom Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+
+
+</head>
+
+<body mv-app="todo" mv-storage="local" mv-mode="edit">
+
+    <header>
+        <h1>Tasks To-do</h1>
+        <p><strong>[count(done)]</strong> done out of <strong>[count(task)]</strong> total</p>
+    </header>
+
+    <ul>
+        <li property="task" mv-multiple>
+            <label>
+			<input property="done" type="checkbox" />
+			<span property="taskTitle">Do stuff</span>
+		</label>
+        </li>
+        <button class="clear-completed" mv-action="delete(task where done)">Clear Completed</button>
+    </ul>
+    <footer>
+        <h3> Developed with <i class="fa fa-heart text-danger"></i> &amp; <i class="fa fa-coffee text-warning"></i> by
+            <a href="https://bolajiayodeji.github.io"><span style="color:firebrick">Bolaji Ayodeji</span></a>
+        </h3>
+        <br />
+        <p> cc: <a href="https://favcode54.org"><span style="color:firebrick">Favcode54</span></a> Rapid Web Class &copy; June 2018.</p>
+    </footer>
+
+</body>
+
+</html>
